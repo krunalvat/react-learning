@@ -41,6 +41,7 @@ ReactDOM.render(
 </>,document.getElementById('challenge-second'));
 
 
+// using external css add css to className
 ReactDOM.render(
 <>
 <h1 className='heading'>Image Gallery</h1>
@@ -58,6 +59,38 @@ ReactDOM.render(
 
 </>,document.getElementById('image-gallery'));
 
+
+// using inline css to to element
+
+ReactDOM.render(
+    <>
+    <h1 style={{ backgroundColor :"red", textAlign : "center", fontSize : "large"}}>Image Gallery Inline Css</h1>
+    </>,document.getElementById('image-gallery-inline'));
+
+
+// challeange 3
+
+let time = new Date(2023,8,26,16);
+ time = time.getHours();
+let greeting = '';
+let cssStyle ={ };
+if(time >= 1 && time < 12) {
+    greeting = "Good Morning";
+    cssStyle.color ="green";
+} else if(time >=12 && time <17) {
+    greeting = "Good Afternoon";
+    cssStyle.color ="orange";
+} else {
+    greeting = "Good Night";
+    cssStyle.color ="black";
+}
+ReactDOM.render(
+<>
+<div className="greetings">
+    <h1>Create Greeeting Wish Using React</h1>
+    <h1> Hello sir, <span style={ cssStyle } > {  greeting } </span></h1>
+</div>
+</>, document.getElementById('challenge-three'));
 
 
 // ReactDOM.render([
