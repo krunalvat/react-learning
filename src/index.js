@@ -7,7 +7,11 @@ import ChallengeOne from './ChallengeOne';
 import ChallengeTwo from './ChallengeTwo';
 import ImageGallery from './ImageGallery';
 import {addition, subtraction, multiplication, division} from './Calculator';
+import User from './User';
+import UserCard from './UserCard';
+import Props from './Props';
 import ChallengeThree from './ChallengeThree';
+
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
 // import * as Import from './ImportExport'; // Lern Import Export Features Second Example
@@ -68,6 +72,29 @@ ReactDOM.render(
  { `Division Of Number is:  ${division(40,3)} `}
 
 </>,document.getElementById('calculator-data'));
+
+ReactDOM.render(
+    <>
+    < Props name="Krunal"/>
+    </>,document.getElementById('props-data')
+);
+
+
+
+ReactDOM.render( <> 
+<div className="container">
+    <div className="row">
+        
+        { User.map((val) => {
+            return (
+                <>
+                    < UserCard name= {val.name} username ={ val.username } email = { val.email } image= { val.image } />
+                </>
+            )
+        })}
+    </div>
+</div>
+</>,document.getElementById('user-props-data'));
 
 ReactDOM.render([
     <h1>Hello</h1>,
