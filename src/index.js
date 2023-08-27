@@ -6,6 +6,7 @@ import App from './App';
 import ChallengeOne from './ChallengeOne';
 import ChallengeTwo from './ChallengeTwo';
 import ImageGallery from './ImageGallery';
+import {addition, subtraction, multiplication, division} from './Calculator';
 import ChallengeThree from './ChallengeThree';
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
@@ -58,6 +59,15 @@ ReactDOM.render(<>
 
 // Image Gallery
 ReactDOM.render(<> < ImageGallery /> </>,document.getElementById('image-gallery'));
+
+ReactDOM.render(
+<> 
+ { `Sum Of Number is:  ${addition(40,4)}  `}
+ { `Subtraction Of Number is:  ${subtraction(40,4)} `}
+ { `Multiplication Of Number is:  ${multiplication(40,4)} `}
+ { `Division Of Number is:  ${division(40,3)} `}
+
+</>,document.getElementById('calculator-data'));
 
 ReactDOM.render([
     <h1>Hello</h1>,
