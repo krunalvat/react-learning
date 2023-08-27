@@ -88,7 +88,7 @@ ReactDOM.render( <>
         { User.map((val) => {
             return (
                 <>
-                    < UserCard name= {val.name} username ={ val.username } email = { val.email } image= { val.image } />
+                    < UserCard key = {val.id} name= {val.name} username ={ val.username } email = { val.email } image= { val.image } />
                 </>
             )
         })}

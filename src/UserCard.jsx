@@ -12,9 +12,6 @@ return (
             <p className="card-text"> { props.username}</p>
         </div>
     </div>
-
-    
-    
 </>
 )
 };
