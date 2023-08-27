@@ -3,7 +3,7 @@ import React from "react";
 function Challenge(){
     return (
 
-        <h1>HEllo</h1>
+        <h1 style={{ color: "red"}}>HEllo From Name JSX</h1>
     );
 
 }
