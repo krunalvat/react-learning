@@ -11,6 +11,7 @@ import User from './User';
 import UserCard from './UserCard';
 import Props from './Props';
 import ChallengeThree from './ChallengeThree';
+import UseStateExample from './UseStateExample';
 
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
@@ -102,6 +103,13 @@ ReactDOM.render([
     ],
     document.getElementById('root')
     ); //single render jsx
+
+ReactDOM.render(
+    <>
+    <h1>Learn useState</h1>
+    < UseStateExample/>
+    </>,document.getElementById('use-state-example')
+);
 
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
