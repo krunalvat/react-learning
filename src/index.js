@@ -12,6 +12,7 @@ import UserCard from './UserCard';
 import Props from './Props';
 import ChallengeThree from './ChallengeThree';
 import UseStateExample from './UseStateExample';
+import Form from './Form';
 
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
@@ -109,6 +110,11 @@ ReactDOM.render(
     <h1>Learn useState</h1>
     < UseStateExample/>
     </>,document.getElementById('use-state-example')
+);
+ReactDOM.render(
+    <>
+    <Form />
+    </>,document.getElementById('react-form-render')
 );
 
 
