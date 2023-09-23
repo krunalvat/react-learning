@@ -12,10 +12,14 @@ import UserCard from './UserCard';
 import Props from './Props';
 import ChallengeThree from './ChallengeThree';
 import UseStateExample from './UseStateExample';
+
+/** Hard Coded */
 import Form from './Form';
 
+/** Little Hard Coded */
 import FormSimple from './FormSimple';
 
+import FormSimpleTwo from './FormSimpleTwo';
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
 // import * as Import from './ImportExport'; // Lern Import Export Features Second Example
@@ -125,6 +129,12 @@ ReactDOM.render(
     <>
     <FormSimple />
     </>,document.getElementById('react-simple-form-render')
+);
+
+ReactDOM.render(
+    <>
+    <FormSimpleTwo />
+    </>,document.getElementById('react-simple-two-form-render')
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));

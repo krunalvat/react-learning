@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-function FormSimple () {
+function FormSimpleTwo () {
 
     const [fullName,setFullName] = useState( {
         name : '',
@@ -13,25 +13,9 @@ function FormSimple () {
         const { value,name} = event.target;
 
         setFullName ( (previousValue) => {
-
-            if(name === 'name') {
-                return {
-                        name : value,
-                        email : previousValue.email,
-                        phone: previousValue.phone,
-                }
-            } else if(name === 'phone') {
-                return {
-                    name : previousValue.name,
-                    email : previousValue.email,
-                    phone: value,
-            }
-            } else {
-                return {
-                    email : value,
-                    name : previousValue.name,
-                    phone: previousValue.phone,
-            }
+            return{
+                ...previousValue,
+                [name]: value,
             }
         });
     }
@@ -64,4 +48,4 @@ function FormSimple () {
     );
 }
 
-export default FormSimple;
+export default FormSimpleTwo;
