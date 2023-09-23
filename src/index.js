@@ -14,6 +14,8 @@ import ChallengeThree from './ChallengeThree';
 import UseStateExample from './UseStateExample';
 import Form from './Form';
 
+import FormSimple from './FormSimple';
+
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
 // import * as Import from './ImportExport'; // Lern Import Export Features Second Example
@@ -111,12 +113,19 @@ ReactDOM.render(
     < UseStateExample/>
     </>,document.getElementById('use-state-example')
 );
+
 ReactDOM.render(
     <>
     <Form />
     </>,document.getElementById('react-form-render')
 );
 
+
+ReactDOM.render(
+    <>
+    <FormSimple />
+    </>,document.getElementById('react-simple-form-render')
+);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(

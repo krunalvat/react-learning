@@ -2,6 +2,9 @@ import React,{useState} from "react";
 
 function Form () {
 
+    /**
+     * Hard coded
+     */
     const [name,setName] = useState("");
     
     const [fullName,setFullName] = useState("");
