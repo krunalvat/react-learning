@@ -28,6 +28,8 @@ import Name from "./Name";
 
 import ToDoListToggle from './ToDoListToggle';
 
+import UseContext from './UseContext';
+
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 // ReactDOM.render(<h1>Hello</h1>,document.getElementById('root')); //single render jsx
@@ -143,6 +145,13 @@ ReactDOM.render(
     <>
     <ToDoListToggle />
     </>,document.getElementById('todo-list-api-render')
+);
+
+
+ReactDOM.render(
+    <>
+    <UseContext />
+    </>,document.getElementById('context-api-render')
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
