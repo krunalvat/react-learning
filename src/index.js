@@ -26,6 +26,8 @@ import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Ler
 
 import Name from "./Name";
 
+import ToDoListToggle from './ToDoListToggle';
+
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 // ReactDOM.render(<h1>Hello</h1>,document.getElementById('root')); //single render jsx
@@ -135,6 +137,12 @@ ReactDOM.render(
     <>
     <FormSimpleTwo />
     </>,document.getElementById('react-simple-two-form-render')
+);
+
+ReactDOM.render(
+    <>
+    <ToDoListToggle />
+    </>,document.getElementById('todo-list-api-render')
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
