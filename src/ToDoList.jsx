@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import TodoList from "./components/TodoList";
 
 const ToDoList = () =>{
     const [inputList,setInputList] = useState();
@@ -18,6 +18,14 @@ const ToDoList = () =>{
         }
     };
 
+    const deleteItemData = (id) => {
+        setItemListData( (oldList) => {
+            return oldList.filter((arrayElemnt,index) => {
+                return index !== id;
+            });
+        });
+    }
+
 return (
     <>
         <div className="container">
@@ -33,11 +41,10 @@ return (
                         </div>
                         <div class="card-footer text-muted">
                             <ol>
-
-                            { itemListData.map((value) => {
-                                    return <li>{value}</li>;
+                                { itemListData.map((value,index) => {
+                                    return  <TodoList key={index} id={index} data={value} onSelect={deleteItemData}/>;
                                 })
-                            }
+                                }
                             </ol>
                         </div>
                 </div>
