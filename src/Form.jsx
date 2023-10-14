@@ -18,13 +18,13 @@ function Form () {
                 [name]  : value
             }
         });
-
+    }
     /**
      * Hard coded
      */
-    const [name,setName] = useState("");
+    const [Name,setName] = useState("");
     
-    const [fullName,setFullName] = useState("");
+    const [newFullName,setNewFullName] = useState("");
 
     const [email,setEmail] = useState("");
 
@@ -43,8 +43,7 @@ function Form () {
         
         console.log("Form Submitted successfully");
 
-        // alert("Form Submitted Successfully");
-        // setFullName(name);
+        alert("Form Submitted Successfully");
     }
     
 
@@ -67,4 +66,3 @@ function Form () {
 }
 
 export default Form;
-
