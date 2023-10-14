@@ -2,6 +2,7 @@ import React,{useState} from "react";
 
 function Form () {
 
+
     const [fullName,setFullName] = useState({
         first_name : "",
         email : "",
@@ -17,6 +18,24 @@ function Form () {
                 [name]  : value
             }
         });
+
+    /**
+     * Hard coded
+     */
+    const [name,setName] = useState("");
+    
+    const [fullName,setFullName] = useState("");
+
+    const [email,setEmail] = useState("");
+
+    const [newEmail,setNewEmail] = useState("");
+
+    const setInputFormName = (event)=> {
+        setName(event.target.value);
+    }
+
+    const setInputFormEmail = (event)=> {
+        setEmail(event.target.value);
     }
 
     const onSubmitForm = (event) => {

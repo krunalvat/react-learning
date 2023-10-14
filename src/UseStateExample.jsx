@@ -25,7 +25,7 @@ function UseStateExample() {
         <h1> <input type="text" name="name" value={name} onChange={ updatedName }></input></h1>
         
         <h1>{ number }</h1>
-        <h1> <button value={number} onClick={ increment } className="btn btn-primary btn-lg"> + </button> <button value={number} onClick={ decrement } className="btn btn-danger btn-lg"> - </button></h1>
+        <h1> <button value={number} onClick={ increment } className="btn btn-primary btn-lg" title="Add"> + </button> <button value={number} onClick={ decrement } className="btn btn-danger btn-lg" title="Remove"> - </button></h1>
         </>
     )
 };

@@ -12,13 +12,25 @@ import UserCard from './UserCard';
 import Props from './Props';
 import ChallengeThree from './ChallengeThree';
 import UseStateExample from './UseStateExample';
+
+/** Hard Coded */
 import Form from './Form';
 
+/** Little Hard Coded */
+import FormSimple from './FormSimple';
+
+import FormSimpleTwo from './FormSimpleTwo';
+
+import ToDoList from './ToDoList';
 
 import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Lern Import Export Features
 // import * as Import from './ImportExport'; // Lern Import Export Features Second Example
 
 import Name from "./Name";
+
+import ToDoListToggle from './ToDoListToggle';
+
+import UseContext from './UseContext';
 
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -111,12 +123,45 @@ ReactDOM.render(
     < UseStateExample/>
     </>,document.getElementById('use-state-example')
 );
+
 ReactDOM.render(
     <>
     <Form />
     </>,document.getElementById('react-form-render')
 );
 
+
+ReactDOM.render(
+    <>
+    <FormSimple />
+    </>,document.getElementById('react-simple-form-render')
+);
+
+ReactDOM.render(
+    <>
+    <FormSimpleTwo />
+    </>,document.getElementById('react-simple-two-form-render')
+);
+
+
+ReactDOM.render(
+    <>
+    <ToDoList />
+    </>,document.getElementById('todo-list-render')
+);
+
+ReactDOM.render(
+    <>
+    <ToDoListToggle />
+    </>,document.getElementById('todo-list-api-render')
+);
+
+
+ReactDOM.render(
+    <>
+    <UseContext />
+    </>,document.getElementById('context-api-render')
+);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
