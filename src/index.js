@@ -148,6 +148,7 @@ ReactDOM.render(
     <>
     <ToDoList />
     </>,document.getElementById('todo-list-render')
+);
 
 ReactDOM.render(
     <>
