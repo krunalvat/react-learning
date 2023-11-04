@@ -10,8 +10,8 @@ const TodoListToggleComponent = ({question,answer}) => {
         <div className="container">
         
             <div className="card text-center">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
+            <div className="input-group mb-3">
+                <div className="input-group-prepend">
                     <button className="btn btn-primary" onClick={ () => setAnswer(!showAnswer)}> { showAnswer ? '-' : '+' }</button>
                 </div>
                     <span className="pe-2">{question}</span>

@@ -39,7 +39,7 @@ return (
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div className="card-footer text-muted">
                             <ol>
                                 { itemListData.map((value,index) => {
                                     return  <TodoList key={index} id={index} data={value} onSelect={deleteItemData}/>;
