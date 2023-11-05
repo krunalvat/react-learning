@@ -68,6 +68,9 @@ const Nav = () => {
               <li className="nav-item active">
                 <NavLink exact activeClassName="active" className="nav-link" to="/user-params/test/1">UseParams</NavLink>
               </li>
+              <li className="nav-item active">
+                <NavLink exact activeClassName="active" className="nav-link" to="/search">Search</NavLink>
+              </li>
             </ul>
           </div>
         </nav>

@@ -22,6 +22,7 @@ import ChallengeThree from './ChallengeThree';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './Nav';
 import UserPrams from './UserPrams';
+import Search from './Search';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
       <Route exact path='/name' element={<Name/>} />
       <Route exact path='/user-context' element={<UseContext/>} />
       <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
+      <Route exact path='/search' element={<Search/>} />
     </Routes> 
     </>
   );
