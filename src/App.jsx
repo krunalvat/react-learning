@@ -21,6 +21,7 @@ import ChallengeTwo from './ChallengeTwo';
 import ChallengeThree from './ChallengeThree';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './Nav';
+import UserPrams from './UserPrams';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
       <Route exact path='/form-three' element={<FormSimpleTwo/>} />
       <Route exact path='/name' element={<Name/>} />
       <Route exact path='/user-context' element={<UseContext/>} />
+      <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
     </Routes> 
     </>
   );
