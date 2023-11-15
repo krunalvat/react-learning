@@ -4,7 +4,7 @@ import React,{useState} from "react";
 
 function UseStateExample() {
 
-    const [name, updatedNewName] = useState("Krunal");
+    const [name, updatedNewName] = useState("Hello");
     const [number, setNumber] = useState(0);
 
     const updatedName = (event) => {

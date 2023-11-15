@@ -1,7 +1,7 @@
 import React from "react";
 
 function Name() {
-    var Name = "Krunal Vatvani";
+    var Name = "Hello";
     return (
         <h1> My Name is:-  { Name }</h1>
     );

@@ -89,7 +89,7 @@ ReactDOM.render(
 
 ReactDOM.render(
     <>
-    < Props name="Krunal"/>
+    < Props name="Hello"/>
     </>,document.getElementById('props-data')
 );
 
