@@ -11,7 +11,7 @@ import ImportExport,{ FavDish, YourName, YourAge } from './ImportExport'; // Ler
 // ReactDOM.render(<h1>Hello</h1>,document.getElementById('root')); //single render jsx
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/react-learning">
      <App />
     </BrowserRouter>,
     document.getElementById("root")
