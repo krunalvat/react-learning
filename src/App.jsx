@@ -1,33 +1,37 @@
 import React from 'react';
-import UseContext from './UseContext';
-import Name from "./Name";
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+
+import './App.css';
+
+import UseContext from './components/UseContext';
+import UserPrams from './components/UserPrams';
+
+import Nav from './components/Nav';
+import Name from "./components/Name";
 /** Hard Coded */
-import Form from './Form';
-
+import Form from './components/Form';
 /** Little Hard Coded */
-import FormSimple from './FormSimple';
-
-import FormSimpleTwo from './FormSimpleTwo';
-import User from './User';
-import UserCard from './UserCard';
-import Props from './Props';
-import ToDoListToggle from './ToDoListToggle';
-import ToDoList from './ToDoList';
-import UseStateExample from './UseStateExample';
-import ImageGallery from './ImageGallery';
-import Challenge from "./Challenge";
-import ChallengeOne from './ChallengeOne';
-import ChallengeTwo from './ChallengeTwo';
-import ChallengeThree from './ChallengeThree';
-import { Routes, Route } from 'react-router-dom';
-import Nav from './Nav';
-import UserPrams from './UserPrams';
-import Search from './Search';
+import FormSimple from './components/FormSimple';
+import FormSimpleTwo from './components/FormSimpleTwo';
+import User from './components/User';
+import UserCard from './components/UserCard';
+import Props from './components/Props';
+import ToDoListToggle from './components/ToDoListToggle';
+import ToDoList1 from './components/ToDoList1';
+import UseStateExample from './components/UseStateExample';
+import ImageGallery from './components/ImageGallery';
+import Challenge from "./components/Challenge";
+import ChallengeOne from './components/ChallengeOne';
+import ChallengeTwo from './components/ChallengeTwo';
+import ChallengeThree from './components/ChallengeThree';
+import Search from './components/Search';
 
 function App() {
   return (
     <>
-    <Nav />
+    <BrowserRouter basename="/">
+     {/* <App /> */}
+     <Nav />
     <Routes>
       <Route  path='/challenge' element={<Challenge />} />
       <Route exact path='/challenge-one' element={<ChallengeOne />} />
@@ -35,7 +39,7 @@ function App() {
       <Route exact path='/challenge-three' element={<ChallengeThree />} />
       <Route exact path='/image-gallery' element={<ImageGallery />} />
       <Route exact path='/use-state' element={<UseStateExample />} />
-      <Route exact path='/todo-list' element={<ToDoList />} />
+      <Route exact path='/todo-list' element={<ToDoList1 />} />
       <Route exact path='/todo-list-toggle' element={<ToDoListToggle />} />
       <Route exact path='/props' element={<Props name="test"/>} />
       <Route exact path='/user-props' element={ User.map((val) => {
@@ -52,7 +56,8 @@ function App() {
       <Route exact path='/user-context' element={<UseContext/>} />
       <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
       <Route exact path='/search' element={<Search/>} />
-    </Routes> 
+    </Routes>
+    </BrowserRouter>,
     </>
   );
 }

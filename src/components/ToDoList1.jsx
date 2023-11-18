@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import TodoList from "./components/TodoList";
+import TodoList from "./TodoList";
 
-const ToDoList = () =>{
+const ToDoList1 = () =>{
     const [inputList,setInputList] = useState();
     const[itemListData,setItemListData] = useState([]);
 
@@ -55,4 +55,4 @@ return (
 }
 
 
-export default ToDoList;
+export default ToDoList1;
